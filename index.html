@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form4D</title>
+<meta name="description" content="Form4D produces 4D construction films and interactive applications.">
+<link rel="icon" type="image/png" href="assets/logo_mark.png">
+<style>
+  @font-face { font-family: "Form4D Sans"; src: url("assets/fonts/Form4DSans-Regular.woff") format("woff"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Form4D Sans"; src: url("assets/fonts/Form4DSans-SemiBold.woff") format("woff"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Form4D Sans"; src: url("assets/fonts/Form4DSans-Bold.woff") format("woff"); font-weight: 700; font-display: swap; }
+
+  :root {
+    --ink: #17121f;      /* aubergine, brand background */
+    --ice: #6fd8f2;      /* brash ice */
+    --blue: #2979ff;     /* electric blue */
+    --purple: #5e2ca5;   /* royal purple */
+    --text: #f4f2f7;
+    --muted: #b9b1c6;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--ink);
+    color: var(--text);
+    font-family: "Form4D Sans", Inter, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column;
+  }
+  main {
+    flex: 1;
+    display: flex; flex-direction: column; justify-content: center;
+    width: 100%; max-width: 720px; margin: 0 auto; padding: 48px 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .brand img { width: 56px; height: auto; display: block; }
+  .brand h1 { margin: 0; font-size: 3rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+  .brand h1 b { color: var(--ice); font-weight: 700; }
+  .line { margin: 28px 0 0; font-size: 1.25rem; line-height: 1.5; max-width: 34em; }
+  .soon { margin: 36px 0 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ice); }
+  .contact { margin: 10px 0 0; font-size: 1rem; color: var(--muted); }
+  .contact a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--blue); }
+  .contact a:hover { border-bottom-color: var(--ice); }
+  footer { padding: 0 24px 20px; max-width: 720px; width: 100%; margin: 0 auto; font-size: 0.8rem; color: var(--muted); }
+  .bars { display: flex; flex-direction: column; }
+  .bars span { height: 4px; }
+  @media (max-width: 520px) {
+    .brand h1 { font-size: 2.3rem; }
+    .brand img { width: 44px; }
+    .line { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <img src="assets/logo_mark.png" alt="">
+    <h1>Form<b>4D</b></h1>
+  </div>
+  <p class="line">4D construction films and interactive applications, built from the programme and the design model.</p>
+  <p class="soon">Website coming soon</p>
+  <p class="contact">Contact <a href="mailto:dave@form4d.co.uk">dave@form4d.co.uk</a></p>
+</main>
+<footer>Dave Rowe trading as Form4D</footer>
+<div class="bars" aria-hidden="true">
+  <span style="background: var(--purple)"></span>
+  <span style="background: var(--blue)"></span>
+  <span style="background: var(--ice)"></span>
+</div>
+</body>
+</html>
