@@ -15,7 +15,7 @@ One page, "Website coming soon", until the full site (Documents\form4d-site) is 
    | A     | @    | 185.199.111.153         |
    | CNAME | www  | hydrogenbadger.github.io |
 
-3. **Email:** the page shows dave@form4d.co.uk. In Namecheap, form4d.co.uk > Manage > Redirect Email, add alias `dave` forwarding to your Gmail. Without this, mail to that address bounces.
+3. **Email:** the page shows enquiries@form4d.co.uk. In Namecheap, form4d.co.uk > Manage > Redirect Email, add alias `enquiries` forwarding to your Gmail. Without this, mail to that address bounces. (`dave` forwards too, for invoices and direct contact.)
 4. After DNS settles (minutes to a few hours), go back to GitHub Settings > Pages and tick **Enforce HTTPS**.
 
 `form4d.uk` can point at the same page: Advanced DNS > URL Redirect Record, host `@`, value `https://form4d.co.uk`, permanent (301).
